@@ -1,0 +1,282 @@
+body {
+    background-color: rgba(38, 53, 83, 0.9);
+}
+
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+stylings for things inside the main output container
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+div.main_output_container {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 85%;
+    height: 80%;
+    /*background-color: rgba(0, 0, 0, .1);*/
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+}
+
+div.highlighting_line {
+    position: absolute;
+    display: none;
+    z-index: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(255, 255, 0, .5);
+    margin-top: 0px;
+}
+
+textarea.output_textarea {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    overflow: auto;
+    /*border: 1px solid rgba(0, 0, 0, .5);*/
+    z-index: 1;
+    box-sizing: border-box;
+    resize: both;
+}
+
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+stylings for things inside the navigation button container
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+  
+input.next_line_button {
+    display: none;
+    /* position: relative;
+    float: top; */
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    background-color: rgb(0, 123, 255);
+}
+  
+input.previous_line_button {
+    display: none;
+    /* position: relative;
+    float: bottom; */
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    background-color: rgb(0, 123, 255);
+}
+
+input.readibility_reset_button {
+    display: none;
+    /* position: relative;
+    float: bottom;
+    float: right; */
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    background-color: rgb(0, 84, 162);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++
+stylings for things inside the side bar container
++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+div.side_bar_container {
+    position: absolute;
+    width: 5%;
+    height: 90%;
+    top: 20px;
+    right: 20px;
+}
+
+img.side_bar_image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50px;
+}
+
+img.settings_icon_image {
+    position: relative;
+    z-index: 3;
+}
+
+img.side_bar_image:hover {
+    cursor: pointer;
+}
+
+p.side_bar_label {
+    max-width: 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+    font-size: 2vw;
+    color: black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+p.side_bar_label:hover {
+    cursor: pointer;
+}
+
+hr.options_features_divider {
+    border: none;
+    height: 5px;
+    color: black;
+    background-color: black;
+}
+
+p.features_label {
+    display: inline;
+    padding-right: 2px;
+}
+
+input.features_checkbox {
+    float: right;
+}
+
+
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+stylings for things inside the modal settings container
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+div.modal_settings_container {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    min-width: 30%;
+    max-width: 40%;
+    height: 100%;
+    background-color: rgba(144, 144, 144, .9);
+}
+
+div.modal_settings_content {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 60%;
+}
+
+input.apply_settings_button {
+    margin-left: 0%;
+}
+
+p.settings_label {
+    display: inline;
+    padding-right: 2px;
+}
+
+select.settings_dropdown {
+    float: right;
+    width: 50%;
+}
+
+input.toggle_hot_keys_checkbox {
+    float: right;
+}
+
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+stylings for things inside the speed read output container
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+div.speed_reader_output_container {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 70%;
+    height: 30%;
+    border: 1px solid rgba(0, 0, 0, .5);
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+stylings for things inside the speed read features container
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+div.control_button_container {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 9%;
+    width: 70%;
+    height: 22%;
+}
+
+input.play_and_pause_button {
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    bottom: 55%;
+    right: 39%;
+    font-size: 16px;
+    background-color: rgb(0, 123, 255);
+}
+
+input.reset_button {
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    bottom: 55%;
+    left: 29%;
+    font-size: 16px;
+    background-color: rgb(0, 123, 255);
+}
+
+input.increase_speed_button {
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    bottom: 6%;
+    right: 39%;
+    font-size: 18px;
+    background-color: rgb(0, 123, 255);
+}
+
+input.decrease_speed_button {
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    bottom: 6%;
+    left: 29%;
+    font-size: 18px;
+    background-color: rgb(0, 123, 255);
+}
+
+p.speed_output_label {
+    position: absolute;
+    width: 10%;
+    bottom: 6%;
+    right: 50%;
+    font-size: 24px;
+    text-align: center;
+}
+
+div.percentage_complete_meter {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    width: 70%;
+    height: 2%;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+div.meter {
+    width: 0%;
+    height: 100%;
+    background-color: red;
+}

@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Final Project",
+    "description": "This extension allows the user to select text and open it up in a new tab that allows the user to be able to increase readability or speed read.",
+    "version": "1.0",
+  
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "background": {
+        "persistent": false,
+        "scripts": ["popup.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentscript.js"]
+        }
+    ],
+    "permissions": [
+      "activeTab",
+      "storage",
+      "http://*/",
+      "https://*/"
+    ]
+  }
